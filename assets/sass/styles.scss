@@ -6,6 +6,8 @@
     --background-color: #FAF9F6; /* Light neutral background */
     --text-color: #22223B; /* Deep dark grey */
     --hover-color: #C9ADA7; /* Muted rose for hover effects */
+    --link-color: #4A90E2; /* Accent blue for links */
+    --link-hover-color: #2568B0; /* Darker blue for link hover */
 }
 
 /* General Styles */
@@ -27,7 +29,7 @@ body {
     padding: 1rem 0;
 
     .navbar-brand {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: bold;
         color: var(--accent-color);
         transition: transform 0.2s ease-in-out;
@@ -52,7 +54,7 @@ body {
 
 /* Hero Section (Masthead) */
 .bd-masthead {
-    padding: 4rem 0;
+    padding: 6rem 1rem;
     background: linear-gradient(
             180deg,
             rgba(250, 249, 246, 0.8),
@@ -78,13 +80,23 @@ body {
             color: var(--text-color);
         }
     }
+
+    h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
 }
 
 /* Feature Cards */
 .list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 2rem;
 
     .card {
@@ -114,7 +126,7 @@ footer {
     background-color: var(--primary-color);
     color: var(--accent-color);
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 0.9rem;
 
     a {
@@ -127,15 +139,7 @@ footer {
     }
 }
 
-/* Utility Classes */
-.text-accent {
-    color: var(--accent-color);
-}
-
-.text-primary {
-    color: var(--primary-color);
-}
-
+/* Buttons */
 .btn-outline {
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
@@ -146,5 +150,51 @@ footer {
     &:hover {
         background: var(--primary-color);
         color: var(--background-color);
+    }
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--link-hover-color);
+    }
+}
+
+/* Utility Classes */
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 0;
+
+        .navbar-brand {
+            font-size: 1.2rem;
+        }
+    }
+
+    .bd-masthead {
+        padding: 4rem 1rem;
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+
+    .list {
+        grid-template-columns: 1fr;
     }
 }
