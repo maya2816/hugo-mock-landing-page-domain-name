@@ -1,36 +1,45 @@
-baseURL = 'https://maya2816.github.io/hugo-mock-landing-page/'
-title = "My Hugo Landing Page"
-author = "Maya Kfir"
-copyright = "MIT Licensed"
+# Base URL for deployment on GitHub Pages
+baseURL = 'https://maya2816.github.io/hugo-mock-landing-page/'  
 
-timeZone = 'Europe/London'
+# Site Metadata
+title = "Adaptly"  
+author = "Maya Kfir"  
+description = "Seamless Glasses & Headphone Integration for Ultimate Comforte."
+copyright = "© 2025 Maya Kfir. All rights reserved."
 
-# Multilingual
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = false
+# Timezone for the site
+timeZone = 'Europe/London'  
 
-theme = "hugo-bootstrap-theme"
+# Multilingual Settings
+defaultContentLanguage = "en"  
+defaultContentLanguageInSubdir = false  
 
-disableHugoGeneratorInject = true
-enableRobotsTXT = true
-enableEmoji = true
+# Theme Configuration
+theme = "hugo-bootstrap-theme"  
 
+# Settings
+disableHugoGeneratorInject = true  # Removes "Hugo" generator metadata from the output
+enableRobotsTXT = true             # Generates a robots.txt file for SEO
+enableEmoji = true                 # Enables emoji support on the site
+
+# Taxonomies (e.g., tags for posts)
 [taxonomies]
   tag = "tags"
   category = "categories"
   series = 'series'
   author = "authors"
 
+# Sitemap Configuration (for search engines)
 [sitemap]
-  changefreq = "weekly"
-  filename = "sitemap.xml"
-  priority = 0.5
+  changefreq = "daily"          # Update frequency for the site
+  filename = "sitemap.xml"      # Filename of the sitemap
+  priority = 0.8                # Priority for search engine crawling
 
+# Module Configuration
 [module]
   [module.hugoVersion]
-    extended = true
-    min = "0.143.1"
-    max = ""
+    extended = true              # Use Hugo Extended version
+    min = "0.143.1"              # Minimum Hugo version required
   [[module.mounts]]
     source = "assets"
     target = "assets"
@@ -38,3 +47,9 @@ enableEmoji = true
     source = "static"
     target = "static"
 
+# Open Graph and Twitter Card (Social Media Preview Metadata)
+[params]
+  ogTitle = "Adaptly - Seamless Glasses & Headphone Integration"
+  ogDescription = "Say goodbye to discomfort. Adaptly ensures a perfect fit for glasses and headphones, offering UV protection, durability, and style."
+  ogImage = "/images/logo.png"  # Add your logo path here
+  twitterCard = "summary_large_image"
