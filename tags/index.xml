@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Adaptly</title>
+    <link>https://maya2816.github.io/hugo-mock-landing-page/tags/</link>
+    <description>Recent content in Tags on Adaptly</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© 2025 Maya Kfir. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maya2816.github.io/hugo-mock-landing-page/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adaptly</title>
+      <link>https://maya2816.github.io/hugo-mock-landing-page/tags/adaptly/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://maya2816.github.io/hugo-mock-landing-page/tags/adaptly/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Color</title>
+      <link>https://maya2816.github.io/hugo-mock-landing-page/tags/color/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://maya2816.github.io/hugo-mock-landing-page/tags/color/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Design</title>
+      <link>https://maya2816.github.io/hugo-mock-landing-page/tags/design/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://maya2816.github.io/hugo-mock-landing-page/tags/design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Index</title>
+      <link>https://maya2816.github.io/hugo-mock-landing-page/tags/index/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://maya2816.github.io/hugo-mock-landing-page/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Featured</title>
+      <link>https://maya2816.github.io/hugo-mock-landing-page/tags/featured/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://maya2816.github.io/hugo-mock-landing-page/tags/featured/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>https://maya2816.github.io/hugo-mock-landing-page/tags/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://maya2816.github.io/hugo-mock-landing-page/tags/privacy/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

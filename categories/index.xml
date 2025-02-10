@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Adaptly</title>
+    <link>https://maya2816.github.io/hugo-mock-landing-page/categories/</link>
+    <description>Recent content in Categories on Adaptly</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <copyright>© 2025 Maya Kfir. All rights reserved.</copyright>
+    <lastBuildDate>Mon, 10 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://maya2816.github.io/hugo-mock-landing-page/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Bootstrap Blog</title>
+      <link>https://maya2816.github.io/hugo-mock-landing-page/categories/the-bootstrap-blog/</link>
+      <pubDate>Mon, 10 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://maya2816.github.io/hugo-mock-landing-page/categories/the-bootstrap-blog/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
