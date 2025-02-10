@@ -22,6 +22,38 @@ body {
     padding: 0;
 }
 
+/* Navbar Styles */
+.navbar {
+    @extend .navbar-dark;
+    background-color: var(--gradient-start);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--accent-color);
+        font-family: 'Poppins', sans-serif;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            color: var(--hover-color);
+            transform: scale(1.1);
+        }
+    }
+
+    .nav-link {
+        color: var(--accent-color);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+
+        &:hover {
+            color: var(--hover-color);
+            text-decoration: underline;
+        }
+    }
+}
+
 /* Hero Section */
 .bd-masthead {
     padding: 6rem 1rem;
@@ -37,8 +69,9 @@ body {
 
     .tagline {
         color: var(--text-color);
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 400;
+        font-family: 'Poppins', sans-serif;
         margin-top: 0.5rem;
     }
 
@@ -60,6 +93,33 @@ body {
     .footer-text {
         font-size: 0.9rem;
         color: var(--text-color);
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+/* Feature Section */
+.features-section {
+    .card {
+        background-color: var(--accent-color);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card-text {
+            color: var(--text-color);
+        }
     }
 }
 
@@ -78,5 +138,27 @@ footer {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+/* Utility Classes */
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.btn-outline {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    background: transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    &:hover {
+        background: var(--primary-color);
+        color: var(--background-color);
     }
 }
