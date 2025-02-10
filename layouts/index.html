@@ -1,35 +1,33 @@
 {{ define "main" }}
 
-<section class="section bd-masthead" style="min-height: 100vh; background: linear-gradient(135deg, #4A4E69, #9A8C98); color: #fff; display: flex; align-items: center;">
+<section class="section bd-masthead">
   <div class="container-xxl">
-    <div class="col-md-8 mx-auto text-center">
-      <!-- Logo with increased size -->
+    <div class="col-md-8 mx-auto text-center my-5">
+      <!-- Logo -->
       <img class="d-block mx-auto mb-3" src="{{ `images/logo-adaptly.png` | relURL }}" alt="Adaptly Logo" style="max-height: 200px;">
-
-      <!-- Tagline or Description -->
-      <p class="lead mb-4" style="font-size: 1.5rem; color: #EDEDED;">{{ .Site.Params.Description }}</p>
+      
+      <!-- Title and Tagline -->
+      <h1>{{ .Site.Title }}</h1>
+      <p class="tagline">Seamless Integration of Glasses and Headphones for Ultimate Comforte.</p>
 
       <!-- Get Started Button -->
-      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://github.com/filipecarneiro/hugo-bootstrap-theme" role="button" style="background-color: #F2E9E4; color: #4A4E69; border: none; font-weight: bold;">Get Started</a>
+      <a class="btn btn-bd-primary btn-lg px-4 mb-2" href="https://github.com/maya2816/hugo-mock-landing-page" role="button">Get Started</a>
 
       <!-- Footer Description -->
-      <p class="mt-4" style="font-size: 0.9rem;">© 2025 Maya Kfir. All rights reserved.</p>
+      <p class="text-muted mb-0">© 2025 Maya Kfir. All rights reserved.</p>
     </div>
   </div>
 </section>
 
-<!-- Features Section -->
 <section class="section container my-3">
   {{ partial "features" . }}
 </section>
 
-<!-- Latest Posts Section -->
 <section class="section container my-3">
   <h3 class="text-secondary text-center my-5">Latest Posts</h3>
   {{ partial "latest-posts" . }}
 </section>
 
-<!-- Featured Pages Section -->
 <section class="section container my-3">
   <h3 class="text-secondary text-center my-5">Featured Pages</h3>
   {{ partial "featured-pages" . }}
