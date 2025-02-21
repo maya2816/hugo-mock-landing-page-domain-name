@@ -1,5 +1,5 @@
 # Base URL for deployment on GitHub Pages
-baseURL = 'https://maya2816.github.io/hugo-mock-landing-page-autodeployed/'
+baseURL = "https://maya2816.github.io/hugo-mock-landing-page-domain-name/"
 
 # Site Metadata
 title = "Adaptly"  
