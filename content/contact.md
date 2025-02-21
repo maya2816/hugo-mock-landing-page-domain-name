@@ -1,10 +1,14 @@
 ---
 title: "Contact"
-draft: false
 menu:
   main:
-    weight: 50
+    identifier: "contact"
+    name: "Contact"
+    url: "/contact/"
+    weight: 90
+draft: false
 ---
+
 
 # Contact Us
 
@@ -33,5 +37,5 @@ We’re available during the following hours:
 ---
 
 ### 🛠 Need Help? 
-
+[Open an issue](https://github.com/maya2816/hugo-mock-landing-page-autodeployed/issues/new) on GitHub.
 
