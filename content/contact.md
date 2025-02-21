@@ -7,5 +7,7 @@ menu:
     url: "/contact/"
     weight: 90
 draft: false
+type: "page"
 ---
 
+This is the Contact Page. 
