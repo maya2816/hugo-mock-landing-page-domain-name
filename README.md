@@ -1,87 +1,83 @@
-# hugo-mock-landing-page
+# Hugo Mock Landing Page - Auto Deployed
 
-### Hugo Mock Landing Page: Adaptly
+## Overview 
+This repository contains an **automated deployment pipeline** for a **Hugo static website** using **GitHub Actions** and **GitHub Pages**. 
+The site is automatically **built and deployed** whenever changes are pushed to the `main` branch.
 
-## Assignment Description
-
-This assingment is the first homework for CIS 3500: Software Engineering course.
-It involves creating a customized landing page for a fictional product, **Adaptly**, using the Hugo static site generator. The goal was to learn modern web development practices, work with Hugo's templating system, and publish the site to GitHub Pages.
-
-Through this assignment, the following key objectives were met:
-- **Learn to quickly familiarize yourself with new web development tools and technologies through exploration and experimentation.**
-- Exploring how to customize a static site using Hugo.
-- Practicing UI/UX design and user story implementation.
-- Deploying a live website on GitHub Pages.
+This repository is a part of **CIS 3500: Software Engineering**, Homework #2.
 
 ---
 
-## Key Changes and Features
+## 🚀 Workflow Description
 
-1. **Redesigned Background**:
-    - Updated the background to a **modern gradient design**.
-    - Created a visually appealing aesthetic to improve the site's overall look.
+This repository uses **GitHub Actions** to automate the deployment process. The workflow is defined in  
+📁 **`.github/workflows/gh-pages-deployment.yaml`**.
 
-2. **Updated Contact Page**:
-    - Added **email**, **phone number**, and **social media links**.
-    - Included business hours.
+### **How the GitHub Actions Workflow Works**
+1. **Trigger:** The workflow runs **on every push** to the `main` branch.
+2. **Checkout Repository:** It fetches the source code from the repository.
+3. **Initialize Hugo:** The workflow installs **Hugo** (version `0.144.1`).
+4. **Build the Site:** Hugo compiles the static files with options for **minification (`--minify`)** and **garbage collection (`--gc`)**.
+5. **Deploy to GitHub Pages:** The compiled site is automatically pushed to the `gh-pages` branch.
 
-3. **Logo, Title, and Tagline**:
-    - Designed and added a **custom logo** for Adaptly.
-    - Added a **title** and tagline.
-      
-4. **Features Section**:
-    - Wrote **six custom features** showcasing the product’s value.
-    - Illustrated **three features** using icons.
+### **GitHub Actions Workflow File (`gh-pages-deployment.yaml`)**
+```yaml
+name: 🏗️ Build and Deploy GitHub Pages
 
-5. **Posts and Pages**:
-    - Cleaned up unnecessary content to streamline the workspace.
-    - Kept **one draft post** as a sample reference.
-    - Added **two featured pages**:
-        - One draft for demonstration.
-        - One live page showcasing custom Adaptly content.
----
+on:
+  push:
+    branches:
+      - main
 
-## Product Description
+jobs:
+  deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: 🔄 Check Out Source Repository
+        uses: actions/checkout@v3.5.1
+        with:
+          submodules: true
+          fetch-depth: 0
 
-### **Adaptly: Seamless Integration of Glasses and Headphones for Ultimate Comfort**
+      - name: 🛠️ Initialize Hugo Environment
+        uses: peaceiris/actions-hugo@v2.6.0
+        with:
+          hugo-version: "0.144.1"
+          extended: true
 
-Adaptly addresses the common discomfort of wearing glasses and headphones together, focusing on ergonomics, style, and innovation.
+      - name: 🏗️ Compile Hugo Static Files
+        run: hugo -D --gc --minify
 
-#### **Key Features**:
+      - name: 🚀 Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+```
 
-1. **Adaptability & Comfort**  
-   Say goodbye to discomfort. Adaptly ensures a perfect fit for glasses and headphones, eliminating temple pressure during long usage.
+## 🌍 Deployment URL
+Once the workflow completes successfully, the website is accessible at:
+➡ https://your-github-username.github.io/hugo-mock-landing-page-autodeployed/
 
-2. **UV and Blue Light Tracker**  
-   Protect your eyes with Adaptly’s built-in UV and blue light tracker. Get real-time alerts to monitor and reduce exposure.
+## ✅ How to Trigger a New Deployment
 
-3. **Sweatproof and Durable Design**  
-   Built to last, Adaptly is sweatproof, ensuring durability during workouts or long commutes.
+To manually trigger a deployment:
 
-4. **Universal Compatibility**  
-   Works seamlessly with popular headphones like AirPods Max, Sony WH-1000XM5, and Bose QuietComfort.
+1. Make any change in the repository.
+2. Commit and push to the main branch.
+3. GitHub Actions will automatically rebuild and deploy the website.
 
-5. **Personalized Options**  
-   Choose from multiple colors and designs to match your personal style.
+**To Verify Deployment:**
 
-6. **Eco-Friendly Materials**  
-   Made with sustainable, eco-conscious materials, Adaptly reduces your environmental impact.
+* Navigate to the **"Actions"** tab in your repository.
+* Click on the most recent workflow run to check **logs and status**.
 
----
+## 📚 References & Resources
+* GitHub Actions Documentation: https://docs.github.com/en/actions
+* Hugo Documentation: https://gohugo.io/
+* GitHub Pages Setup Guide: https://docs.github.com/en/pages
+* peaceiris/actions-gh-pages GitHub Action: https://github.com/peaceiris/actions-gh-pages
 
-## Running the Site Locally
 
-To run the site locally and make real-time edits, follow the steps below:
-
-### **Prerequisites**
-
-1. Install **Hugo**.
-
-2. Install **Git** to clone the repository.
-
-### **Steps**
-
-1. Clone this repository to your local machine.
-2. Navigate to the repository folder.
-3. Start Hugo development server: "hugo server".
-4. Open site in your browser.
