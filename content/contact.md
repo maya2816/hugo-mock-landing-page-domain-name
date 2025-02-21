@@ -27,3 +27,5 @@ We’re available during the following hours:
 - **Monday - Friday**: 9 AM - 6 PM (EST)
 - **Saturday - Sunday**: Closed
 
+[Open an issue](https://github.com/maya2816/hugo-mock-landing-page-autodeployed/issues/new) on GitHub.
+
