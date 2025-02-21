@@ -1,2 +1,9 @@
+[[menu.main]]
+identifier = "contact"
+name = "Contact"
+url = "/contact/"
+weight = 90
+
+
 baseURL = 'https://maya2816.github.io/hugo-mock-landing-page-autodeployed/'
 
