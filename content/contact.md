@@ -1,13 +1,26 @@
 ---
 title: "Contact"
+draft: false
 menu:
   main:
-    identifier: "contact"
-    name: "Contact"
-    url: "/contact/"
     weight: 90
-draft: false
-type: "page"
 ---
 
-This is the Contact Page. 
+# Contact Us
+
+We’d love to hear from you! Whether you have questions about **Adaptly**, partnership opportunities, or feedback, feel free to reach out to us.
+
+### Get in Touch
+- 📧 **Email**: [maya.kfir@example.com](mailto:maya.kfir@example.com)
+- 📞 **Phone**: [+1 267 624 4441](tel:+12676244441)
+
+### Connect With Us
+Follow us on social media to stay updated:
+- 🐦 [Twitter](https://twitter.com/example)
+- 💼 [LinkedIn](https://www.linkedin.com/in/maya-kfir100/)
+
+### Business Hours
+We’re available during the following hours:
+- **Monday - Friday**: 9 AM - 6 PM (EST)
+- **Saturday - Sunday**: Closed
+
