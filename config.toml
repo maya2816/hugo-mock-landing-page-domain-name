@@ -1,5 +1,5 @@
 
-baseURL = 'https://maya2816.github.io/hugo-mock-landing-page-autodeployed/'
+baseURL = "https://maya2816.github.io/hugo-mock-landing-page-domain-name/"
 
 [menu]
   [[menu.main]]
