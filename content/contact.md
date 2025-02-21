@@ -1,10 +1,15 @@
 ---
 title: "Contact"
-draft: false
 menu:
   main:
+    identifier: "contact"
+    name: "Contact"
+    url: "/contact/"
     weight: 90
+draft: false
+type: "page"
 ---
+
 
 # Contact Us
 
