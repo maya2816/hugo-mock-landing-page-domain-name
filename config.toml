@@ -1,5 +1,7 @@
-[menu]
 
+baseURL = 'https://maya2816.github.io/hugo-mock-landing-page-autodeployed/'
+
+[menu]
   [[menu.main]]
     identifier = "home"
     name = "Home"
