@@ -7,9 +7,7 @@ menu:
     url: "/contact/"
     weight: 90
 draft: false
-type: "page"
 ---
-
 
 # Contact Us
 
