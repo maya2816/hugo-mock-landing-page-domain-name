@@ -11,7 +11,25 @@ identity and expression, level of experience, education, socio-economic status,
 nationality, personal appearance, race, caste, color, religion, or sexual
 identity and orientation.&lt;/p>
 &lt;p>We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.&lt;/p></description></item><item><title>Contact</title><link>https://maya2816.github.io/hugo-mock-landing-page/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://maya2816.github.io/hugo-mock-landing-page/contact/</guid><description>&lt;p>This is the Contact Page.&lt;/p></description></item><item><title>Markdown Cheat Sheet Ⓜ️⬇️</title><link>https://maya2816.github.io/hugo-mock-landing-page/page/markdown-cheat-sheet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://maya2816.github.io/hugo-mock-landing-page/page/markdown-cheat-sheet/</guid><description>&lt;h1 id="markdown-cheat-sheet">Markdown Cheat Sheet&lt;/h1>
+diverse, inclusive, and healthy community.&lt;/p></description></item><item><title>Contact</title><link>https://maya2816.github.io/hugo-mock-landing-page/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://maya2816.github.io/hugo-mock-landing-page/contact/</guid><description>&lt;h1 id="contact-us">Contact Us&lt;/h1>
+&lt;p>We’d love to hear from you! Whether you have questions about &lt;strong>Adaptly&lt;/strong>, partnership opportunities, or feedback, feel free to reach out to us.&lt;/p>
+&lt;h3 id="get-in-touch">Get in Touch&lt;/h3>
+&lt;ul>
+&lt;li>📧 &lt;strong>Email&lt;/strong>: &lt;a href="mailto:maya.kfir@example.com">maya.kfir@example.com&lt;/a>&lt;/li>
+&lt;li>📞 &lt;strong>Phone&lt;/strong>: &lt;a href="tel:&amp;#43;12676244441">+1 267 624 4441&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="connect-with-us">Connect With Us&lt;/h3>
+&lt;p>Follow us on social media to stay updated:&lt;/p>
+&lt;ul>
+&lt;li>🐦 &lt;a href="https://twitter.com/example" target="_blank" rel="noopener">Twitter&lt;/a>&lt;/li>
+&lt;li>💼 &lt;a href="https://www.linkedin.com/in/maya-kfir100/" target="_blank" rel="noopener">LinkedIn&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="business-hours">Business Hours&lt;/h3>
+&lt;p>We’re available during the following hours:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Monday - Friday&lt;/strong>: 9 AM - 6 PM (EST)&lt;/li>
+&lt;li>&lt;strong>Saturday - Sunday&lt;/strong>: Closed&lt;/li>
+&lt;/ul></description></item><item><title>Markdown Cheat Sheet Ⓜ️⬇️</title><link>https://maya2816.github.io/hugo-mock-landing-page/page/markdown-cheat-sheet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://maya2816.github.io/hugo-mock-landing-page/page/markdown-cheat-sheet/</guid><description>&lt;h1 id="markdown-cheat-sheet">Markdown Cheat Sheet&lt;/h1>
 &lt;p>Hugo has excellent Markdown support out of the box. By default, Hugo uses the &lt;a href="https://github.com/yuin/goldmark/" target="_blank" rel="noopener">Goldmark Markdown processor&lt;/a> which is fully CommonMark-compliant. See the &lt;a href="https://gohugo.io/getting-started/configuration-markup/" target="_blank" rel="noopener">configuration instructions&lt;/a> to learn more about the extensions you can configure.&lt;/p>
 &lt;h2 id="overview">Overview&lt;/h2>
 &lt;p>You can refer to the table below for an overview of basic markdown syntax:&lt;/p>
